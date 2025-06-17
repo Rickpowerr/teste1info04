@@ -1,9 +1,7 @@
-# teste1info04
-e um teste de aula
 <!DOCTYPE html>
 <html>
 <head>
-<title>Minha Primeira Página HTML</title>
+<title>Página grautecnico HTML</title>
 </head>
 <body>
 <style>
@@ -13,7 +11,7 @@ e um teste de aula
 
     .fundo{
         background-color:rgb(255, 255, 255);
-        color:rgba(7, 168, 29, 0.932);
+        color:rgba(255, 255, 255, 0.932);
         display: block;
     }
     #item1{
@@ -30,25 +28,26 @@ e um teste de aula
     }
 </style>
 
-<h1>Bem-vindo à minha página</h1>
-<p>Parágrafo</p>
-<a href="https://www.google.com">Ir para o google</a>
+<h1>Minha Primeira Página HTML</h1>
+<p>Bem-vindo à minha página</p>
+<a href="https://www.grautecnico.com.br/">Ir para o google</a>
         <!-- primeira parte -->>
 <span class="fundo">
         <h2>item1</h2>
-        <p id="item1">um dolor sit amet consectetur adipisicing elis maxime rem at unde expedita qu      <img width="80%" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYUQeaY5LGvN4vVLs_4h4pcb4Ql46N31wSfQ&s">
-</span>
+        <p id="item1">bem-vindo ao site do grau técnico onde você enc
+</span>ontrara mais informações sobre as nossas unidades e quais conteúdos você se enquadra
+grau tecnico unidades      <img width="80%" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYOoyL8LBZ_BqBzYdCG7pnEzubB3RMEJ2FgQ&s">
         <!-- segunda parte-->>
 <span class="fundo">
         <h3>item2</h3>
-        <p id="item2">Lorem ipsum dolor sit amet consectetur adipisicing elis maxime rem at unde expedita quia, minus atque aliquam possimus vero excepturi assumenda. Delectus excepturi repudiandae modi?</p>
-t. Eaque odio tempore animi eiu       <img width="80%" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYUQeaY5LGvN4vVLs_4h4pcb4Ql46N31wSfQ&s">
+        <p id="item2">bem-vindo ao site do grau técnico onde você encontrara mais informações sobre as nossas unidades e quais conteúdos você se enquadra</p>
+grau tecnico unidades       <img width="80%" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYOoyL8LBZ_BqBzYdCG7pnEzubB3RMEJ2FgQ&s">
 </span>
         <!-- terceira parte -->>
 <span class="fundo">
         <h4>item3</h4>
-        <p id="item3">Lorem ipsum dolor sit amet consectetur adipisicing elis maxime rem at unde expedita quia, minus atque aliquam possimus vero excepturi assumenda. Delectus excepturi repudiandae modi?</p>
-t. Eaque odio tempore animi eiu       <img width="80%" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYUQeaY5LGvN4vVLs_4h4pcb4Ql46N31wSfQ&s">
+        <p id="item3">bem-vindo ao site do grau técnico onde você encontrara mais informações sobre as nossas unidades e quais conteúdos você se enquadra</p>
+grau tecnico unidades       <img width="80%" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYOoyL8LBZ_BqBzYdCG7pnEzubB3RMEJ2FgQ&s">
 </span>
 
 </body>
