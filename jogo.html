@@ -1,0 +1,93 @@
+<style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background: #f0f0f0;
+    }
+    h1 {
+      color: #333;
+    }
+    .opcoes img {
+      width: 100px;
+      margin: 10px;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+    .opcoes img:hover {
+      transform: scale(1.1);
+    }
+    #resultado {
+      font-size: 20px;
+      margin-top: 20px;
+    }
+    .pontuacao {
+      font-size: 18px;
+      color: #006400;
+    }
+  </style>
+  </head>
+  <body>
+  
+  <h1>🎮 Jokenpô — Pedra, Papel ou Tesoura 🎮</h1>
+  
+  <p>Escolha sua jogada:</p>
+  
+  <div class="opcoes">
+    <img src="https://s5.static.brasilescola.uol.com.br/be/2022/02/crack.jpg" alt="Pedra" onclick="jogar('pedra')">
+    <img src="https://legalizeja.com.br/wp-content/uploads/2015/11/shine-papel-bolado.jpg" alt="Papel" onclick="jogar('papel')">
+    <img src="https://m.media-amazon.com/images/I/51TZI1jbLuL._UF894,1000_QL80_.jpg" alt="Tesoura" onclick="jogar('tesoura')">
+  </div>
+  
+  <div id="resultado"></div>
+  <div class="pontuacao" id="pontos">Pontos: 0</div>
+  
+  <!-- Áudio do grito do Tom -->
+  <audio id="somTom">
+    <source src="https://www.myinstants.com/media/sounds/tom-scream.mp3" type="audio/mpeg">
+    Seu navegador não suporta áudio.
+  </audio>
+  
+  <script>
+  let pontos = 0;
+  const opcoes = ['pedra', 'papel', 'tesoura'];
+  
+  function jogar(escolhaUsuario) {
+    const escolhaMaquina = opcoes[Math.floor(Math.random() * 3)];
+    
+    let resultado = `Você escolheu <b>${escolhaUsuario}</b>.<br>
+                     Máquina escolheu <b>${escolhaMaquina}</b>.<br>`;
+  
+    if (escolhaUsuario === escolhaMaquina) {
+      resultado += "🤝 Empate! Continue jogando!";
+    } else if (
+      (escolhaUsuario === 'pedra' && escolhaMaquina === 'tesoura') ||
+      (escolhaUsuario === 'papel' && escolhaMaquina === 'pedra') ||
+      (escolhaUsuario === 'tesoura' && escolhaMaquina === 'papel')
+    ) {
+      pontos++;
+      resultado += "🎉 Você venceu esta rodada!";
+    } else {
+      resultado += "💥 A máquina venceu! Fim de jogo.";
+      document.getElementById('resultado').innerHTML = resultado;
+      document.getElementById('pontos').innerHTML = Pontuação final: ${pontos};
+      tocarSomTom();
+      desativar();
+      return;
+    }
+  
+    document.getElementById('resultado').innerHTML = resultado;
+    document.getElementById('pontos').innerHTML = Pontos: ${pontos};
+  }
+  
+  function desativar() {
+    const imagens = document.querySelectorAll('.opcoes img');
+    imagens.forEach(img => img.style.pointerEvents = 'none');
+    imagens.forEach(img => img.style.opacity = '0.5');
+  }
+  
+  function tocarSomTom() {
+    const audio = document.getElementById('somTom');
+    audio.volume = 1.0;
+    audio.play();
+  }
+  </script>
