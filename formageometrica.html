@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=-, initial-scale=1.0">
+    <title>formageometrica</title>
+</head>
+<body>
+    <script>
+console.log(10 < 5 || 20 < 5)
+    let forma = prompt('escolha entre 1 forma (quadrado(1),retangulo(2),circulo(3))')
+    if(forma == '1'){
+        alert("quadrado escolhido")
+        lado = Number(prompt("Digite o valor do lado"))
+        area = lado * lado
+        prompt("A área é: ", area)
+        if (area % 2 === 0) {
+        alert("A área é um número PAR")
+    } else {
+        alert("A área é um número ÍMPAR")
+        }
+    } else if(forma == 2){
+        alert("retangulo escolhido")
+        base = Number(prompt("Digite o valor do base"))
+        altura = Number(prompt("Digite o valor do altura"))
+        area = base * altura
+        prompt("A área é: ", area)
+        if (area % 2 === 0) {
+        alert("A área é um número PAR")
+    } else {
+        alert("A área é um número ÍMPAR")
+        }
+    } else if(forma == 3){
+       alert("circulo escolhido")
+        raio = Number(prompt("Digite o valor do raio"))
+        area = 3.14 * raio
+        prompt("A área é: ", area)
+         if (area % 2 === 0) {
+        alert("A área é um número PAR")
+    } else {
+        alert("A área é um número ÍMPAR")
+        }
+    } else {
+        alert('Opção inválida')
+    }
+    for(let numero=0; numero<1; numero++){
+        alert("FIM do codigo"+numero)
+    }
+    </script>
+</body>
+</html>
